@@ -84,7 +84,7 @@ const InvoiceInput = ({ onGenerateInvoice }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // post the data to the database
-    axios.post('https://invoice-gen-backend-1.onrender.com/api/invoices/create', invoiceData)
+    axios.post('https://invoice-gen-backend-2.onrender.com/api/invoices/create', invoiceData)
       .then(res => {
         console.log('posted', res.data);
         onGenerateInvoice(invoiceData);
